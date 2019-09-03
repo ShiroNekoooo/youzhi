@@ -1,0 +1,465 @@
+@import "./common.less";
+@import "./adapter.less";
+
+// 顶栏
+.header{
+    
+    width:100%;
+    height:0.9rem;
+    padding-top: 0.25rem;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    background: #fff;
+   
+     .logo{
+        float: left;
+        img{
+            display: block;
+            width: 0.96rem;
+            height: 0.48rem;
+        }
+     }
+
+     .mine{
+         float:right;
+         line-height:.45rem;
+         .person{
+             float: left;
+             .person-icon{
+               font-size:.5rem;
+               margin-right: .2rem;
+               margin-top:-.05rem;
+               display:block;
+               cursor: pointer;
+              
+             }
+         }
+         .menu{
+             float:left;
+             img{
+                width: 0.4rem;
+                height: 0.4rem;
+                
+             }
+           
+         }
+     }
+
+}
+
+//轮播图
+.rolling{
+    position: relative;
+    width: 100%;
+height: 2.2rem;
+overflow: hidden;
+    .photoBox{
+        position: absolute;
+        top:0rem;
+        left:0rem;
+        width:400%;
+        height:2.2rem;
+
+            ul{
+                
+              
+                li{
+                    width:25%;
+                    float: left;
+                    a{   
+                        img{
+                        width: 100%;
+                        height:2.2rem;
+                           }
+                 
+                    }
+
+
+
+                }
+            }
+
+
+
+    }
+
+    .dot{
+        width:100%;
+        position: absolute;
+        bottom:.1rem;
+       
+        text-align: center;
+        .circle{
+            display: inline-block;
+            width: 0.15rem;
+            height: 0.15rem;
+            border:.02rem solid #fff;
+            margin-right :0.1rem;
+            .br(50%);
+          
+
+
+        }
+    }
+}
+
+//五个图标项
+.sections{
+  
+    height: 1.84rem;
+    margin:0 auto;
+    background-color: #fff;
+   ul{
+    height: 1.84rem;
+    display: flex;
+
+    li{
+        flex:1;
+        text-align: center;
+        float:left;
+        line-height: 1.84rem;
+            img{
+                margin-top:.2rem;
+                width: 0.92rem;
+                height:1.24rem;
+            }
+    }
+   }
+    
+}
+
+//文章列表1
+.article{
+  height:8.88rem;
+  background-color: #fff;
+  margin-top:.2rem;
+   
+    
+    .recommend-items{
+            margin: .26rem .3rem;
+            height:8.1rem;
+            
+            .top-items{
+                 border-bottom: 1px solid#e3e4e5;
+                width:100%;
+               .top-l{
+                   float:left;
+                   height: auto;
+                  
+                .pic{
+                    img{
+                        width:3.1rem;
+                        height:1.75rem;
+                    }
+                   
+                    }
+                     .introduce{
+                       
+                        width:3.1rem;
+                        .img-title{
+                            font-size:.28rem;
+                            white-space: nowrap;
+                        }
+                        .title-words{
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            overflow: hidden;
+
+                            .words{
+                                font-size: .23rem;
+                                
+                                color:#8F8F8F;
+                               
+                            }
+                        }
+                       
+
+
+
+                     }
+                } 
+                .top-r{
+                    float:right;
+                    height: auto;
+                    .pic{
+                        img{
+                            width:3.1rem;
+                            height:1.75rem;
+                        }
+                       
+                        }
+                        .introduce{
+                       
+                            width:3.1rem;
+                            .img-title{
+                                font-size:.28rem;
+                                white-space: nowrap;
+                            }
+                            .title-words{
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                overflow: hidden;
+    
+                                .words{
+                                    font-size: .23rem;
+                                    
+                                    color:#8F8F8F;
+                                   
+                                }
+                            }
+                           
+    
+    
+    
+                         }
+
+                    
+
+               }
+
+               
+              
+                
+            }
+            
+                .bottom-items{
+                   
+                    margin-top:.27rem;
+                    width:100%;
+                    .top-l{
+                        float:left;
+                        height: auto;
+                        .pic{
+                            img{
+                                width:3.1rem;
+                                height:1.75rem;
+                            }
+                           
+                            }
+                            .introduce{
+                           
+                                width:3.1rem;
+                                .img-title{
+                                    font-size:.28rem;
+                                    white-space: nowrap;
+                                }
+                                .title-words{
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                    overflow: hidden;
+        
+                                    .words{
+                                        font-size: .23rem;
+                                        
+                                        color:#8F8F8F;
+                                       
+                                    }
+                                }
+                               
+        
+        
+        
+                             }
+    
+                        
+    
+                   }
+                     .top-r{
+                         float:right;
+                         height: auto;
+                         .pic{
+                             img{
+                                 width:3.1rem;
+                                 height:1.75rem;
+                             }
+                            
+                             }
+                             .introduce{
+                            
+                                 width:3.1rem;
+                                 .img-title{
+                                     font-size:.28rem;
+                                     white-space: nowrap;
+                                 }
+                                 .title-words{
+                                     text-overflow: ellipsis;
+                                     white-space: nowrap;
+                                     overflow: hidden;
+         
+                                     .words{
+                                         font-size: .23rem;
+                                         
+                                         color:#8F8F8F;
+                                        
+                                     }
+                                 }
+                                
+         
+         
+         
+                              }
+     
+                         
+     
+                    }
+     
+                    
+                }
+
+
+
+            }
+
+        }
+//评论 (分离复用)
+ .comments{
+            padding:.1rem .1rem;
+            font-size: .2rem;
+         .person{
+              width: 0.25rem;
+              height: 0.25rem;
+              vertical-align:top;
+              line-height: 0.25rem;
+             
+              em{
+                  font-style: normal;
+                  margin-left: .1rem;
+                  
+              }
+             
+          
+         }
+         .time{margin-left: .1rem;;
+            width: 0.25rem;
+            height: 0.25rem;
+            vertical-align:bottom;
+         
+            i{margin-left: .05rem;
+                font-style: normal;
+               
+            }
+         }
+        }
+ 
+ //文章列表2
+ .essay{
+    height:6.8rem;
+    background-color: #fff;
+    .first, .second, .third, .forth{
+        
+            height: 1.5rem;
+            padding:.25rem .3rem;
+            .product-words{
+                float: left;
+                font-size:.25rem;
+            }
+            .product-img{
+                
+                float: right;
+                img{width: 1.7rem;
+                    height: 0.95rem;}
+                
+            }
+
+    }
+    .first, .second, .third{
+        border-bottom: 1px solid#e3e4e5;
+    }
+ }
+ //文章标题 (文章列表)
+ .title{
+    height:.78rem;
+    background-color: #fff;
+        padding: 0 .35rem;
+        border-bottom: 1px solid#e3e4e5;
+    .recommend{
+        float:left;
+        font-size:.3rem;
+        line-height:.78rem;
+        cursor: pointer;
+       span{
+        font-weight:200;
+       
+       }
+    }
+
+    .more{
+        float:right;
+        font-size:.2rem;
+        line-height:.78rem;
+        cursor: pointer;
+        span{
+            color:#ff6700;
+        }
+    }
+
+}
+
+
+
+ .media{
+     height:2.6rem;
+     margin-top: .2rem;
+     padding: .25rem .3rem;
+     background-color: #fff;
+     .focusUs{
+         height:.8rem;
+         text-align:center;
+        .us{
+            position: relative;
+            font-size: .32rem;
+        }
+     }
+     .otherLogo{
+
+        display: flex;
+        
+        div{
+            text-align: center;
+            flex:1;
+            a{
+                display: block;
+                img{
+                    width: 1.25rem;
+                    height: 1.25rem;
+                }
+            }
+        }
+
+     }
+ }
+
+.us::before,.us::after{
+    content:'';
+    width:2.4rem;
+    height:.02rem;
+    position: absolute;
+    background: #e3e4e5; 
+   
+    top:.17rem;
+}
+.us::after{
+    
+   right:-2.71rem;
+ 
+}
+.us::before{
+    left:-2.71rem;
+
+}
+.copyright{
+    margin-top: .2rem;
+    padding: .25rem .3rem;
+    height:1.72rem;
+   
+    div{
+        text-align: center;
+        font-size: .14rem;
+        p{
+            margin-bottom: .14rem;
+            a{
+                margin:0 .1rem;
+            }
+        }
+    }
+}

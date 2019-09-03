@@ -1,0 +1,403 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f6f6f6;
+  font: 14px/1.5 -apple-system, Helvetica, sans-serif;
+}
+ul li,
+ol li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.clearFix:before,
+.clearFix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+img {
+  border: 0;
+}
+input {
+  border: 0;
+}
+em.i {
+  font-style: normal;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 44.44444444px;
+  }
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50.69444444px;
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 57.5px;
+  }
+}
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 88.88888889px;
+  }
+}
+@media screen and (min-width: 720px) {
+  html {
+    font-size: 100px;
+  }
+}
+.header {
+  width: 100%;
+  height: 0.9rem;
+  padding-top: 0.25rem;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+  background: #fff;
+}
+.header .logo {
+  float: left;
+}
+.header .logo img {
+  display: block;
+  width: 0.96rem;
+  height: 0.48rem;
+}
+.header .mine {
+  float: right;
+  line-height: .45rem;
+}
+.header .mine .person {
+  float: left;
+}
+.header .mine .person .person-icon {
+  font-size: .5rem;
+  margin-right: .2rem;
+  margin-top: -0.05rem;
+  display: block;
+  cursor: pointer;
+}
+.header .mine .menu {
+  float: left;
+}
+.header .mine .menu img {
+  width: 0.4rem;
+  height: 0.4rem;
+}
+.rolling {
+  position: relative;
+  width: 100%;
+  height: 2.2rem;
+  overflow: hidden;
+}
+.rolling .photoBox {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  width: 400%;
+  height: 2.2rem;
+}
+.rolling .photoBox ul li {
+  width: 25%;
+  float: left;
+}
+.rolling .photoBox ul li a img {
+  width: 100%;
+  height: 2.2rem;
+}
+.rolling .dot {
+  width: 100%;
+  position: absolute;
+  bottom: .1rem;
+  text-align: center;
+}
+.rolling .dot .circle {
+  display: inline-block;
+  width: 0.15rem;
+  height: 0.15rem;
+  border: .02rem solid #fff;
+  margin-right: 0.1rem;
+  border-radius: 50%;
+}
+.sections {
+  height: 1.84rem;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.sections ul {
+  height: 1.84rem;
+  display: flex;
+}
+.sections ul li {
+  flex: 1;
+  text-align: center;
+  float: left;
+  line-height: 1.84rem;
+}
+.sections ul li img {
+  margin-top: .2rem;
+  width: 0.92rem;
+  height: 1.24rem;
+}
+.article {
+  height: 8.88rem;
+  background-color: #fff;
+  margin-top: .2rem;
+}
+.article .recommend-items {
+  margin: .26rem .3rem;
+  height: 8.1rem;
+}
+.article .recommend-items .top-items {
+  border-bottom: 1px solid#e3e4e5;
+  width: 100%;
+}
+.article .recommend-items .top-items .top-l {
+  float: left;
+  height: auto;
+}
+.article .recommend-items .top-items .top-l .pic img {
+  width: 3.1rem;
+  height: 1.75rem;
+}
+.article .recommend-items .top-items .top-l .introduce {
+  width: 3.1rem;
+}
+.article .recommend-items .top-items .top-l .introduce .img-title {
+  font-size: .28rem;
+  white-space: nowrap;
+}
+.article .recommend-items .top-items .top-l .introduce .title-words {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.article .recommend-items .top-items .top-l .introduce .title-words .words {
+  font-size: .23rem;
+  color: #8F8F8F;
+}
+.article .recommend-items .top-items .top-r {
+  float: right;
+  height: auto;
+}
+.article .recommend-items .top-items .top-r .pic img {
+  width: 3.1rem;
+  height: 1.75rem;
+}
+.article .recommend-items .top-items .top-r .introduce {
+  width: 3.1rem;
+}
+.article .recommend-items .top-items .top-r .introduce .img-title {
+  font-size: .28rem;
+  white-space: nowrap;
+}
+.article .recommend-items .top-items .top-r .introduce .title-words {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.article .recommend-items .top-items .top-r .introduce .title-words .words {
+  font-size: .23rem;
+  color: #8F8F8F;
+}
+.article .recommend-items .bottom-items {
+  margin-top: .27rem;
+  width: 100%;
+}
+.article .recommend-items .bottom-items .top-l {
+  float: left;
+  height: auto;
+}
+.article .recommend-items .bottom-items .top-l .pic img {
+  width: 3.1rem;
+  height: 1.75rem;
+}
+.article .recommend-items .bottom-items .top-l .introduce {
+  width: 3.1rem;
+}
+.article .recommend-items .bottom-items .top-l .introduce .img-title {
+  font-size: .28rem;
+  white-space: nowrap;
+}
+.article .recommend-items .bottom-items .top-l .introduce .title-words {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.article .recommend-items .bottom-items .top-l .introduce .title-words .words {
+  font-size: .23rem;
+  color: #8F8F8F;
+}
+.article .recommend-items .bottom-items .top-r {
+  float: right;
+  height: auto;
+}
+.article .recommend-items .bottom-items .top-r .pic img {
+  width: 3.1rem;
+  height: 1.75rem;
+}
+.article .recommend-items .bottom-items .top-r .introduce {
+  width: 3.1rem;
+}
+.article .recommend-items .bottom-items .top-r .introduce .img-title {
+  font-size: .28rem;
+  white-space: nowrap;
+}
+.article .recommend-items .bottom-items .top-r .introduce .title-words {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.article .recommend-items .bottom-items .top-r .introduce .title-words .words {
+  font-size: .23rem;
+  color: #8F8F8F;
+}
+.comments {
+  padding: .1rem .1rem;
+  font-size: .2rem;
+}
+.comments .person {
+  width: 0.25rem;
+  height: 0.25rem;
+  vertical-align: top;
+  line-height: 0.25rem;
+}
+.comments .person em {
+  font-style: normal;
+  margin-left: .1rem;
+}
+.comments .time {
+  margin-left: .1rem;
+  width: 0.25rem;
+  height: 0.25rem;
+  vertical-align: bottom;
+}
+.comments .time i {
+  margin-left: .05rem;
+  font-style: normal;
+}
+.essay {
+  height: 6.8rem;
+  background-color: #fff;
+}
+.essay .first,
+.essay .second,
+.essay .third,
+.essay .forth {
+  height: 1.5rem;
+  padding: .25rem .3rem;
+}
+.essay .first .product-words,
+.essay .second .product-words,
+.essay .third .product-words,
+.essay .forth .product-words {
+  float: left;
+  font-size: .25rem;
+}
+.essay .first .product-img,
+.essay .second .product-img,
+.essay .third .product-img,
+.essay .forth .product-img {
+  float: right;
+}
+.essay .first .product-img img,
+.essay .second .product-img img,
+.essay .third .product-img img,
+.essay .forth .product-img img {
+  width: 1.7rem;
+  height: 0.95rem;
+}
+.essay .first,
+.essay .second,
+.essay .third {
+  border-bottom: 1px solid#e3e4e5;
+}
+.title {
+  height: .78rem;
+  background-color: #fff;
+  padding: 0 .35rem;
+  border-bottom: 1px solid#e3e4e5;
+}
+.title .recommend {
+  float: left;
+  font-size: .3rem;
+  line-height: .78rem;
+  cursor: pointer;
+}
+.title .recommend span {
+  font-weight: 200;
+}
+.title .more {
+  float: right;
+  font-size: .2rem;
+  line-height: .78rem;
+  cursor: pointer;
+}
+.title .more span {
+  color: #ff6700;
+}
+.media {
+  height: 2.6rem;
+  margin-top: .2rem;
+  padding: .25rem .3rem;
+  background-color: #fff;
+}
+.media .focusUs {
+  height: .8rem;
+  text-align: center;
+}
+.media .focusUs .us {
+  position: relative;
+  font-size: .32rem;
+}
+.media .otherLogo {
+  display: flex;
+}
+.media .otherLogo div {
+  text-align: center;
+  flex: 1;
+}
+.media .otherLogo div a {
+  display: block;
+}
+.media .otherLogo div a img {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.us::before,
+.us::after {
+  content: '';
+  width: 2.4rem;
+  height: .02rem;
+  position: absolute;
+  background: #e3e4e5;
+  top: .17rem;
+}
+.us::after {
+  right: -2.71rem;
+}
+.us::before {
+  left: -2.71rem;
+}
+.copyright {
+  margin-top: .2rem;
+  padding: .25rem .3rem;
+  height: 1.72rem;
+}
+.copyright div {
+  text-align: center;
+  font-size: .14rem;
+}
+.copyright div p {
+  margin-bottom: .14rem;
+}
+.copyright div p a {
+  margin: 0 .1rem;
+}
